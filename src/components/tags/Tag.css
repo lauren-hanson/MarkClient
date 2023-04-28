@@ -1,0 +1,42 @@
+.tagList { 
+    padding: 20px; 
+    display: flex; 
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.tags__individual {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px; 
+    width: 40vw;
+    padding-left: 10px
+    /* display: flex; 
+    flex-direction: column; */
+}
+
+.list { 
+    flex-direction: column;
+    padding: 20px; 
+}
+
+.tagHeader { 
+    font-size: 35px; 
+}
+
+.tagContainer {
+    justify-content: center;
+    align-items:flex-start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.tag__create {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    padding: 50px
+}
