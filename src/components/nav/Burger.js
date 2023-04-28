@@ -4,9 +4,9 @@ import RightNavBar from './RightNavBar';
 
 const Burger = () => {
 
-    const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false)
 
-    const StyledBurger = styled.div`
+  const StyledBurger = styled.div`
   width: 2rem;
   height: 2rem;
   position: fixed;
@@ -39,17 +39,17 @@ const Burger = () => {
   }
 `;
 
-    return (
-        <>
-            <StyledBurger open={open} onClick={() => setOpen(!open)}>
+  return (
+    <>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
 
-                <div />
-                <div />
-                <div />
-            </StyledBurger >
-            <RightNavBar open={open} />
-        </>
-    )
+        <div />
+        <div />
+        <div />
+      </StyledBurger >
+      <RightNavBar open={open} />
+    </>
+  )
 };
 
 export default Burger

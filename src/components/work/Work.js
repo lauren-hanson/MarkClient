@@ -2,6 +2,6 @@
 export const Work = () => {
 
     return (<>
-        <h2>Work</h2>
+        <h2 className="header">Work</h2>
     </>)
 }

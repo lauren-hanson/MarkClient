@@ -10,3 +10,9 @@ body {
 .navbar-item a {
     color: white;
 }
+
+.header {
+    font-size: 5rem;
+    text-align: center;
+
+}
