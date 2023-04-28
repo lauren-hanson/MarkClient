@@ -2,6 +2,6 @@
 export const About = () => { 
     
     return (<>
-        <h2>About Page</h2>
+        <h2 className="header">About Page</h2>
     </>)
 }

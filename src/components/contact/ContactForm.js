@@ -2,6 +2,6 @@
 export const ContactForm = () => { 
     
     return (<>
-        <h2>Contact Form</h2>
+        <h2 className="header">Contact Form</h2>
     </>)
 }
