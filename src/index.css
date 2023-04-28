@@ -2,6 +2,11 @@
 @import 'bulma/css/bulma.css';
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
-body { 
-    font-family: 'Lora', serif;; 
+body {
+    font-family: 'Lora', serif;
+    ;
+}
+
+.navbar-item a {
+    color: white;
 }
