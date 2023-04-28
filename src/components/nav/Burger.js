@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components'
-import TestRightNavBar from './TestRightNavBar';
+import RightNavBar from './RightNavBar';
 
-const TestBurger = () => {
+const Burger = () => {
 
     const [open, setOpen] = useState(false)
 
@@ -47,9 +47,9 @@ const TestBurger = () => {
                 <div />
                 <div />
             </StyledBurger >
-            <TestRightNavBar open={open} />
+            <RightNavBar open={open} />
         </>
     )
 };
 
-export default TestBurger
+export default Burger
