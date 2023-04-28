@@ -1,0 +1,32 @@
+.userContainer {
+    margin: 0 5rem;
+  }
+  
+  .users {
+    width: 50vw;
+    min-width: fit-content;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .user {
+    display: flex;
+    flex-basis: 24%;
+    margin: 0.5rem 1em;
+    padding: 0.5rem 1rem;
+    border: 1px solid goldenrod;
+  }
+  
+  .users_search {
+    width: 25rem;
+  }
+
+  .user__image {
+    width: 200px;
+    object-fit: cover
+  }
+
+  .user__info {
+    padding: 0.5rem 1rem
+  }
+  
