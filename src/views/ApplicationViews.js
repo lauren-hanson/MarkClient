@@ -2,9 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { Login } from "../components/auth/Login"
 import { Register } from "../components/auth/Register"
 import { Authorized } from "./Authorized"
-import { PostList } from "../components/posts/PostList"
 import { MyPosts } from "../components/posts/MyPosts"
-import { NewPost } from "../components/posts/NewPost"
 import { PostDetail } from "../components/posts/PostDetail"
 import { Categories } from "../components/categories/Categories"
 import { TagList } from "../components/tags/TagList"
@@ -35,7 +33,7 @@ export const ApplicationViews = ({ token, setToken }) => {
           <Route path="/posts">
             <Route index element={<PostContainer token={token} />} />
             <Route path="myposts" element={<MyPosts token={token} />} />
-            <Route path="newpost" element={<NewPost token={token} />} />
+
             <Route path=":postId" element={<PostDetail token={token} />} />
             <Route path=":postId/comments" element={<CommentList token={token} />} />
             <Route path="editpost/:postId" element={<EditPost token={token} />} />
