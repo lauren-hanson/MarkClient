@@ -1,6 +1,6 @@
-
 import React from 'react'
 import styled from 'styled-components';
+
 
 const Ul = styled.ul`
 list-style: none;
@@ -8,6 +8,7 @@ display: flex;
 flex-flow: row nowrap;
 li {
 padding: 18px 10px;
+
 }
 @media (max-width: 768px) {
 flex-flow: column nowrap;
@@ -17,26 +18,31 @@ transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
 top: 0;
 right: 0;
 height: 100vh;
-width: 300px;
+width: 100%;
 padding-top: 3.5rem;
 transition: transform 0.3s ease-in-out;
 li {
   color: #fff;
+  text-align: center; 
+  padding-top: 9rem; 
+  font-size: 50px; 
 }
 }
 `
 
-const TestRightNavBar = ({ open }) => {
+const RightNavBar = ({ open }) => {
 
     return (
         <ul>
             <Ul open={open}>
-                <li>Work</li>
-                <li>About</li>
-                <li>Contact </li>
+
+                <li className="navbar-item"><a href="/work">Work</a></li>
+                <li className="navbar-item"><a href="/about">About</a></li>
+                <li className="navbar-item"><a href="/contact">Contact</a></li>
+
             </Ul>
-        </ul>
+        </ul >
     )
 }
 
-export default TestRightNavBar
+export default RightNavBar

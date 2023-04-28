@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
 
+
 const Nav = styled.nav`
 width: 100%;
 height: 55px;
@@ -15,15 +16,15 @@ justify-content: space-between;
 `;
 
 export const NavBar = () => {
-    return (
-        <Nav>
-            <div className="logo">
-                CONTACT
-            </div>
-            <a className="navbar-item" href="/">
-                <h1 className="title is-4">Mark Thomas</h1>
-            </a>
-            <Burger />
-        </Nav>
-    )
+  return (
+    <Nav>
+      <div className="logo">
+        CONTACT
+      </div>
+      <a className="navbar-item" href="/">
+        <h1 className="title is-4">Mark Thomas</h1>
+      </a>
+      <Burger />
+    </Nav>
+  )
 }
