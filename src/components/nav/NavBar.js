@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Burger from './Burger';
+import "./NavBar.css"
 
 
 const Nav = styled.nav`
@@ -10,6 +11,7 @@ border-bottom: 2px solid #f1f1f1;
 padding: 0 20px;
 display: flex;
 justify-content: space-between;
+
 .logo {
   padding: 15px 0;
 }

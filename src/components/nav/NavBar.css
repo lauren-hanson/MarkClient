@@ -1,2 +1,4 @@
-
-
+li.navbar-item {
+    display: block;
+    position: relative;
+}
