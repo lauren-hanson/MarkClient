@@ -4,33 +4,40 @@ export const ContactForm = () => {
 
     return (
         <>
-            <h2>Contact Form</h2>
-
+            {/* <h2>Contact Form</h2> */}
             <div className="contactForm">
-                <fieldset className="input">
-                    <label>Name</label>
-                    <input
-                        type="text" />
-                </fieldset>
-                <fieldset className="input">
-                    <label>Email</label>
-                    <input
-                        type="email" />
-                </fieldset>
-                <fieldset className="input">
-                    <label>Phone #</label>
-                    <input
-                        type="phone #" />
-                </fieldset>
-                <fieldset className="input">
-                    <label>Project Description</label>
-                    <textarea
-                        type="project Description" 
-                        rows='100' cols='100'
+                <div>
+                    <fieldset className="formItem">
+                        <label htmlFor="name">Name: </label>
+                        <input
+                            type="text" />
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset className="formItem">
+                        <label>Email: </label>
+                        <input
+                            type="text" />
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset className="formItem">
+                        <label>Phone #: </label>
+                        <input
+                            type="text" />
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset className="formItem">
+                        <label>Project Description: </label>
+                        <textarea
+                            type="text"
+                            rows='10' cols='50'
                         />
-                </fieldset>
+                    </fieldset>
+                </div>
                 <button class="button is-small">
                     Submit
                 </button>
-            </div></>)
+            </div ></>)
 }
