@@ -14,5 +14,8 @@ body {
 .header {
     font-size: 5rem;
     text-align: center;
+    display: flex; 
+    justify-content: center; 
+    padding-top: 35%; 
 
 }

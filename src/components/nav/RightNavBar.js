@@ -10,7 +10,7 @@ li {
 padding: 18px 10px;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 500rem) {
 flex-flow: column nowrap;
 background-color: #131313;
 position: fixed;
