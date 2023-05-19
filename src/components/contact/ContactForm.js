@@ -1,9 +1,11 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { addNewForm } from "../../managers/FormManager"
 import "./Contact.css"
 
 export const ContactForm = () => {
 
+    const navigate = useNavigate()
 
     const [newForm, setNewForm] = useState({
         name: "",
@@ -22,7 +24,7 @@ export const ContactForm = () => {
     return (
         <>
             {/* <h2>Contact Form</h2> */}
-            <div className="contactForm">
+            <form className="contactForm" action="lohanson33@gmail.com" method="post" enctype="text/plain">
                 <div>
                     <fieldset className="formItem">
                         <label htmlFor="name">Name: </label>
@@ -69,23 +71,25 @@ export const ContactForm = () => {
                         />
                     </fieldset>
                 </div>
-                <button type="submit"
-                    onClick={evt => {
-                        evt.preventDefault()
+                <div>
+                    <input type="submit" value="Send"
+                        onClick={evt => {
+                            evt.preventDefault()
 
-                        const form = {
-                            name: newForm.name,
-                            email: newForm.email,
-                            phone: newForm.phone,
-                            description: newForm.description,
+                            const form = {
+                                name: newForm.name,
+                                email: newForm.email,
+                                phone: newForm.phone,
+                                description: newForm.description,
 
-                        }
+                            }
 
-                        // Send POST request to your API
-                        addNewForm(form).then(
-                            window.alert('Your info has been sent!')
-                        )
-                    }}
-                    className="btn gameButton">Submit Form</button>
-            </div ></>)
+                            // Send POST request to your API
+                            addNewForm(form).then(
+                                window.alert('Your info has been sent!')
+                            ).then(navigate('/'))
+                        }}
+                        className="btn gameButton"></input>
+                </div>
+            </form ></>)
 }
