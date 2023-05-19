@@ -1,9 +1,12 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { addNewForm } from "../../managers/FormManager"
+import axios from 'axios'
 import "./Contact.css"
 
 export const ContactForm = () => {
 
+    const navigate = useNavigate()
 
     const [newForm, setNewForm] = useState({
         name: "",
@@ -18,11 +21,38 @@ export const ContactForm = () => {
         setNewForm(copy)
     }
 
+    const handleSubmit = (event) => {
+        event.preventDefault()
+        const form = {
+            name: newForm.name,
+            email: newForm.email,
+            phone: newForm.phone,
+            description: newForm.description,
+
+        }
+
+        // Send POST request to your API
+        addNewForm(form)
+            // axios.post('api/forms/', {
+            //     name: event.target.name.value,
+            //     email: event.target.email.value,
+            //     phone: event.target.phone.value,
+            //     description: event.target.description.value,
+            // })
+            .then(response => {
+                alert('Email sent!');
+            })
+            .catch(error => {
+                alert('Error sending email');
+            })
+    }
+
+
 
     return (
         <>
             {/* <h2>Contact Form</h2> */}
-            <div className="contactForm">
+            <form className="contactForm" action="lohanson33@gmail.com" method="post" enctype="text/plain" onSubmit={handleSubmit}>
                 <div>
                     <fieldset className="formItem">
                         <label htmlFor="name">Name: </label>
@@ -69,23 +99,28 @@ export const ContactForm = () => {
                         />
                     </fieldset>
                 </div>
-                <button type="submit"
-                    onClick={evt => {
+                <div>
+                    <button type="submit">Send</button>
+                    {/* <input type="submit" value="Send"
+                        onClick={evt => {
+
                         evt.preventDefault()
 
                         const form = {
                             name: newForm.name,
-                            email: newForm.email,
-                            phone: newForm.phone,
-                            description: newForm.description,
+                        email: newForm.email,
+                        phone: newForm.phone,
+                        description: newForm.description,
 
-                        }
+                                }
 
                         // Send POST request to your API
                         addNewForm(form).then(
-                            window.alert('Your info has been sent!')
-                        )
-                    }}
-                    className="btn gameButton">Submit Form</button>
-            </div ></>)
+                        window.alert('Your info has been sent!')
+                        ).then(navigate('/'))
+                            }}
+                        className="btn gameButton">
+                        </input> */}
+                </div>
+            </form ></>)
 }
