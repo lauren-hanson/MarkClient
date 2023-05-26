@@ -1,10 +1,15 @@
 // import { Footer } from "../footer/Footer"
 import "./Home.css"
+import mark from "../../images/mark.jpg"
 
 export const Home = () => {
 
-    return (<>
-        <h1 className="header">Home</h1>
+    return (<div className="homePage">
+        <div className="homePageImage">
+            <img 
+                src={mark}
+                alt="Image of Mark"/>
+        </div>
         {/* <Footer /> */}
-    </>)
+    </div>)
 }

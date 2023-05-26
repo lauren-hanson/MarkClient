@@ -89,29 +89,10 @@ export const ContactForm = () => {
                             rows='10' cols='50'
                         />
                     </fieldset>
-                </div>
-                <div>
-                    <button type="submit">Send</button>
-                    {/* <input type="submit" value="Send"
-                        onClick={evt => {
 
-                        evt.preventDefault()
-
-                        const form = {
-                            name: newForm.name,
-                        email: newForm.email,
-                        phone: newForm.phone,
-                        description: newForm.description,
-
-                                }
-
-                        // Send POST request to your API
-                        addNewForm(form).then(
-                        window.alert('Your info has been sent!')
-                        ).then(navigate('/'))
-                            }}
-                        className="btn gameButton">
-                        </input> */}
+                    <div>
+                        <button type="submit" className="submitButton">Send</button>
+                    </div>
                 </div>
             </form ></>)
 }

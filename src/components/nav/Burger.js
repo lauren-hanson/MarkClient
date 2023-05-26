@@ -14,7 +14,7 @@ const Burger = () => {
   right: 20px;
   z-index: 20;
   display: none;
-  @media (max-width: 500rem) {
+  @media (max-width: 480rem) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
