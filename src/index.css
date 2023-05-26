@@ -15,12 +15,11 @@
 }
 
 .header {
-    font-size: 5rem;
+    font-size: 3rem;
     text-align: center;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
     padding-top: 35%;
-
+    justify-content: center; */
 }
 
 a { 

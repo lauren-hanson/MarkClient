@@ -3,8 +3,12 @@ import "./Home.css"
 
 export const Home = () => {
 
-    return (<>
+    return (<div className="homePage">
         <h1 className="header">Home</h1>
+        <div className="homePageImage">
+            <img 
+                alt="Image of Mark" />
+        </div>
         {/* <Footer /> */}
-    </>)
+    </div>)
 }
