@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Ul = styled.ul`
 list-style: none;
 display: flex;
+z-index: +1;
 flex-flow: row nowrap;
 li {
 padding: 18px 10px;
@@ -12,7 +13,7 @@ padding: 18px 10px;
 }
 @media (max-width: 500rem) {
 flex-flow: column nowrap;
-background-color: #131313;
+background-color: #2e252c;
 position: fixed;
 transform: ${({ open }) => open ? 'translateX(0)' : 'translateX(100%)'};
 top: 0;
@@ -22,7 +23,7 @@ width: 100%;
 padding-top: 3.5rem;
 transition: transform 0.3s ease-in-out;
 li {
-  color: #fff;
+  color: #e1eae9;
   text-align: center; 
   padding-top: 9rem; 
   font-size: 50px; 

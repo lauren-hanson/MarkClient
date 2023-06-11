@@ -1,17 +1,19 @@
 /* imports Bulma framework for css */
 @import 'bulma/css/bulma.css';
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 @media screen and (min-width: 480px) {
     body {
-        font-family: 'Lora', serif;
-        ;
+        /* font-family: 'Lora', serif;
+        ; */
+        font-family: 'Quicksand', sans-serif;
     }
 
 }
 
 .navbar-item a {
-    color: white;
+    color: #e1eae9;
 }
 
 .header {
@@ -22,6 +24,6 @@
     justify-content: center; */
 }
 
-a { 
-    color: black; 
+a {
+    color: black;
 }

@@ -7,6 +7,7 @@ const Burger = () => {
   const [open, setOpen] = useState(false)
 
   const StyledBurger = styled.div`
+  color: #2e252c;
   width: 2rem;
   height: 2rem;
   position: fixed;

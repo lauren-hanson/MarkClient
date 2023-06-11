@@ -1,5 +1,16 @@
+
 li.navbar-item {
     display: block;
     position: relative;
-    
+
+}
+
+.navBarHeadings {
+    color: #2e252c;
+    font-size: 25px;
+}
+
+.logo {
+    color: #2e252c;
+    padding: 15px 0;
 }
