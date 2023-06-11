@@ -15,7 +15,7 @@
 
 .homePageImage {
     margin-top: 5rem;
-    margin-bottom: 20px;
+    padding: 2rem; 
 }
 
 .centered {
@@ -29,8 +29,6 @@
 }
 
 .paragraph {
-   
     /* Adjust the maximum height as needed */
-    margin-top: 20px;
-    padding: 2rem; 
+    padding: 0 5rem; 
 }

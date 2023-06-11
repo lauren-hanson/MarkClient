@@ -22,7 +22,7 @@ const Burger = () => {
   }
   div {
     width: 2rem;
-    height: 0.25rem;
+    height: 0.12rem;
     background-color: ${({ open }) => open ? '#ccc' : '#333'};
     border-radius: 10px;
     transform-origin: 1px;
