@@ -1,15 +1,25 @@
 // import { Footer } from "../footer/Footer"
+import mark from "../../assets/homePageImage.jpeg"
 import "./Home.css"
-import mark from "../../images/mark.jpg"
 
 export const Home = () => {
 
-    return (<div className="homePage">
-        <div className="homePageImage">
-            <img 
-                src={mark}
-                alt="Image of Mark"/>
-        </div>
-        {/* <Footer /> */}
-    </div>)
+    return (
+        <>
+            <div className="homePage">
+                <div className="homePageImage">
+                    <img
+                        src={mark}
+                        alt="Image of Mark" />
+
+                    <p class="centered">neque ornare aenean</p>
+                </div>
+                <div className="paragraph">
+                    <p >
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sem et tortor consequat id porta. Imperdiet proin fermentum leo vel orci porta non pulvinar. Dictum non consectetur a erat nam at lectus urna. Est velit egestas dui id ornare arcu odio.
+                    </p>
+                </div>
+            </div>
+        </>
+    )
 }

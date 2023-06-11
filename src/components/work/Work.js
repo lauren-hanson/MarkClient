@@ -1,7 +1,14 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { getMedias } from "../../managers/MediaManager.js"
 import "./Work.css"
 
 export const Work = () => {
+
+    const [medias, setMedias] = useState([])
+
+    useEffect(() => {
+        getMedias().then((mediaInfo) => setMedias(mediaInfo))
+    })
 
     useEffect(() => {
         const handleScroll = () => {
@@ -35,7 +42,12 @@ export const Work = () => {
     }, [])
 
     return (<div className="workPage">
-        <nav className="navigation">
+        <div>
+            {medias.map((m) => {
+                return <div>{m.type}</div>
+            })}
+        </div>
+        {/* <nav className="navigation">
             <ul>
                 <li>
                     <a href="#film">Film & TV</a>
@@ -47,7 +59,7 @@ export const Work = () => {
                     <a href="#art">Art Direction</a>
                 </li>
             </ul>
-        </nav>
+        </nav> */}
         <div className="film" id="film">
         </div>
         <div className="commercial" id="commercial">
