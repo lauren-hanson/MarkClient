@@ -14,13 +14,17 @@
 }
 
 .homePageImage {
-    margin-top: 5rem;
-    padding: 2rem; 
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.secondHomePageImage { 
+    padding: 2rem;
 }
 
 .centered {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #e1eae9;
@@ -30,5 +34,5 @@
 
 .paragraph {
     /* Adjust the maximum height as needed */
-    padding: 0 5rem; 
+    padding: 0 5rem;
 }
