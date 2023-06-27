@@ -13,6 +13,7 @@ padding: 0 20px;
 display: flex;
 justify-content: space-between;
 background-color: #fafafa;
+color: #2e252c;
 
 `;
 
