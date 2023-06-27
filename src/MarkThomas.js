@@ -8,6 +8,6 @@ export const MarkThomas = () => {
   return <>
     <NavBar />
     <ApplicationViews />
-    {/* <Footer /> */}
+    <Footer />
   </>
 }

@@ -10,7 +10,6 @@
     text-align: center;
     overflow-x: hidden;
     overflow-y: auto;
-
 }
 
 .homePageImage {
@@ -38,7 +37,7 @@
 
 .slideshow {
     padding-top: 1rem;
-    margin: 10px auto;
+    margin: 10px;
     overflow: hidden;
     max-width: 100rem;
 
@@ -57,6 +56,7 @@
     width: 100rem;
     height: 50rem;
     filter: grayscale(1);
+
 }
 
 .slideshowDots {
