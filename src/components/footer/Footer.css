@@ -1,13 +1,13 @@
 .footer {
-    position:fixed;
-    bottom:0;
-    left:0;
-    width: 100%;
-    height: 9rem;
-  }
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 9rem;
+}
 
-.footerFlex { 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-around; 
+.footerFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

@@ -1,6 +1,5 @@
 // import { Footer } from "../footer/Footer"
 import { HomeReel } from "./HomeReel"
-import { ReelData } from "./ReelData"
 import mark from "../../assets/homePageImage.jpeg"
 import "./Home.css"
 
