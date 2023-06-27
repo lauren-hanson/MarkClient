@@ -36,7 +36,7 @@
 /* This is all styling for the reel */
 
 .slideshow {
-    padding-top: 1rem;
+    padding: 1rem;
     margin: 10px;
     overflow: hidden;
     max-width: 100rem;

@@ -10,8 +10,9 @@
 .film,
 .commercial {
     width: 100%;
-    height: 20rem;
+    height: 10rem;
     margin: 3rem;
+    filter: grayscale(1);
 }
 
 .workPage>div {
@@ -31,6 +32,8 @@
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
+    z-index: 1; 
+    
 }
 
 .navigation li {
