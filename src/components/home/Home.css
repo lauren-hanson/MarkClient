@@ -8,23 +8,20 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    overflow-x: hidden;
     overflow-y: auto;
-    max-height: 100%;
 
 }
 
 .homePageImage {
     margin-top: 3rem;
     padding: 2rem;
-}
-
-.secondHomePageImage {
-    padding: 2rem;
+    filter: grayscale(1);
 }
 
 .centered {
     position: absolute;
-    top: 35%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #e1eae9;
@@ -38,66 +35,13 @@
 }
 
 /* This is all styling for the reel */
-.slider {
-    position: relative;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* .image {
-    display: inline-block;
-
-    height: 400px;
-    width: 100%;
-    border-radius: 40px;
-    filter: grayscale(100%);
-
-} */
-
-/* .right-arrow {
-    position: absolute;
-    top: 50%;
-    right: 32px;
-    font-size: 2rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-    font-weight: lighter;
-}
-
-.left-arrow {
-    font-weight: lighter;
-    position: absolute;
-    top: 50%;
-    left: 32px;
-    font-size: 2rem;
-    color: #000;
-    z-index: 10;
-    cursor: pointer;
-    user-select: none;
-} */
-
-/* 
-.slide {
-    opacity: 0;
-    transition-duration: 1s ease;
-} */
-/* 
-.slide.active {
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1.08);
-} */
-
 
 .slideshow {
-    padding-top: 5rem; 
-    margin: 0 auto;
+    padding-top: 1rem;
+    margin: 10px auto;
     overflow: hidden;
-    max-width: 100%;
+    max-width: 100rem;
+
 }
 
 .slideshowSlider {
@@ -107,19 +51,23 @@
 
 .slide {
     display: inline-block;
-    height: 200px;
-    width: 100%;
-    border-radius: 40px;
+    /* height: 400px;
+    width: 100rem; */
+    object-fit: fill; 
+    width: 100rem;
+    height: 50rem;
+    filter: grayscale(1);
 }
 
 .slideshowDots {
     text-align: center;
+    font-weight: lighter;
 }
 
 .slideshowDot {
     display: inline-block;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     border-radius: 50%;
     cursor: pointer;
     margin: 15px 7px 0px;
