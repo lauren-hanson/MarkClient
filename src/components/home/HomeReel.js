@@ -1,13 +1,11 @@
 import React, { useState } from 'react'
 import { ReelData } from './ReelData'
-// import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import "./Home.css"
 
 
-export const HomeReel = ({ slides }) => {
+export const HomeReel = () => {
 
     const [index, setIndex] = useState(0)
-    const colors = ["#0088FE", "#00C49F", "#FFBB28"]
     const delay = 2500
 
     const timeoutRef = React.useRef(null)
@@ -18,33 +16,19 @@ export const HomeReel = ({ slides }) => {
         }
     }
 
-    // const length = slides.length
-
     React.useEffect(() => {
         resetTimeout()
         timeoutRef.current = setTimeout(
             () =>
                 setIndex((prevIndex) =>
-                    prevIndex === colors.length - 1 ? 0 : prevIndex + 1
+                    prevIndex === ReelData.length - 1 ? 0 : prevIndex + 1
                 ),
             delay
         )
-        return () => { 
+        return () => {
             resetTimeout()
         }
     }, [index])
-
-    // const nextSlide = () => {
-    //     setCurrent(current === length - 1 ? 0 : current + 1)
-    // }
-
-    // const prevSlide = () => {
-    //     setCurrent(current === 0 ? length - 1 : current - 1)
-    // }
-
-    // if (!Array.isArray(slides) || slides.length <= 0) {
-    //     return null
-    // }
 
     return (
         <div className="slideshow">
@@ -52,15 +36,17 @@ export const HomeReel = ({ slides }) => {
                 className="slideshowSlider"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
             >
-                {colors.map((backgroundColor, index) => (
+                {ReelData.map((image, index) => (
                     <div
                         className="slide"
                         key={index}
-                        style={{ backgroundColor }} />
+                        style={{ backgroundImage: `url(${image.image})` }} >
+
+                    </div>
                 ))}
             </div>
             <div className="slideshowDots">
-                {colors.map((_, idx) => (
+                {ReelData.map((_, idx) => (
                     <div
                         key={idx}
                         className={`slideshowDot${index === idx ? " active" : ""}`}
