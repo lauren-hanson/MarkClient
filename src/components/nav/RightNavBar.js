@@ -8,7 +8,7 @@ display: flex;
 z-index: +1;
 flex-flow: row nowrap;
 li {
-padding: 18px 10px;
+padding: 16px 10px;
 
 }
 @media (max-width: 500rem) {
@@ -20,7 +20,7 @@ top: 0;
 right: 0;
 height: 100vh;
 width: 100%;
-padding-top: 3.5rem;
+padding-top: 1rem;
 transition: transform 0.3s ease-in-out;
 li {
   color: #e1eae9;

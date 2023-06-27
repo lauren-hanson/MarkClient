@@ -14,13 +14,17 @@
 }
 
 .homePageImage {
-    margin-top: 5rem;
-    padding: 2rem; 
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.secondHomePageImage {
+    padding: 2rem;
 }
 
 .centered {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #e1eae9;
@@ -30,5 +34,98 @@
 
 .paragraph {
     /* Adjust the maximum height as needed */
-    padding: 0 5rem; 
+    padding: 0 5rem;
+}
+
+/* This is all styling for the reel */
+.slider {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .image {
+    display: inline-block;
+
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+    filter: grayscale(100%);
+
+} */
+
+/* .right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 32px;
+    font-size: 2rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+    font-weight: lighter;
+}
+
+.left-arrow {
+    font-weight: lighter;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    font-size: 2rem;
+    color: #000;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+} */
+
+/* 
+.slide {
+    opacity: 0;
+    transition-duration: 1s ease;
+} */
+/* 
+.slide.active {
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1.08);
+} */
+
+
+.slideshow {
+    padding-top: 5rem; 
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.slideshowSlider {
+    white-space: nowrap;
+    transition: ease 1000ms;
+}
+
+.slide {
+    display: inline-block;
+    height: 200px;
+    width: 100%;
+    border-radius: 40px;
+}
+
+.slideshowDots {
+    text-align: center;
+}
+
+.slideshowDot {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 15px 7px 0px;
+    background-color: #c4c4c4;
+}
+
+.slideshowDot.active {
+    background-color: #2e252c;
 }

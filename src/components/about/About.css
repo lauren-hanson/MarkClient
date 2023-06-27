@@ -7,8 +7,7 @@
 }
 
 .aboutPageImage {
-    border-radius: 1%;
-    width: 50rem;
-    text-align: center; 
-    padding: 5rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    
 }
