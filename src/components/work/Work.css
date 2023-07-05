@@ -13,6 +13,7 @@
     height: 10rem;
     margin: 3rem;
     filter: grayscale(1);
+    padding: 1rem; 
 }
 
 .workPage>div {
@@ -20,9 +21,6 @@
     transition: background-color 0.3s;
 }
 
-.workPage>div.active {
-    background-color: #f0f0f0;
-}
 
 .navigation ul {
     list-style: none;

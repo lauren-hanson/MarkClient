@@ -3,10 +3,13 @@ import { Home } from "../components/home/Home"
 import { Work } from "../components/work/Work"
 import { About } from "../components/about/About"
 import { ContactForm } from "../components/contact/ContactForm"
+import { NavBar } from "../components/nav/NavBar"
+import { Footer } from "../components/footer/Footer"
 
 export const ApplicationViews = ({ token, setToken }) => {
   return (
     <>
+      <NavBar /> 
       <Routes>
         <Route path="/">
           <Route index element={<Home />} />
@@ -25,6 +28,7 @@ export const ApplicationViews = ({ token, setToken }) => {
         </Route>
 
       </Routes>
+      <Footer /> 
     </>
   )
 }

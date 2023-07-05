@@ -89,10 +89,9 @@ export const ContactForm = () => {
                             rows='10' cols='50'
                         />
                     </fieldset>
-
-                    <div>
-                        <button type="submit" className="submitButton">Send</button>
-                    </div>
+                </div>
+                <div>
+                    <button type="submit" className="submitButton">Send</button>
                 </div>
             </form ></>)
 }

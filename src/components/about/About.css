@@ -1,13 +1,19 @@
 .aboutPage {
     display: flex;
-    flex-direction: column; 
-    align-items: center;
+    flex-flow: row wrap; 
+    /* align-items: center;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
 }
 
 .aboutPageImage {
-    margin-top: 3rem;
-    padding: 2rem;
+    margin: 5rem;
+    width: 75%;
     
+}
+
+.aboutParagraph { 
+    padding: 2rem; 
+    margin-bottom: 10rem; 
+    border: 1px solid #2e252c; 
 }

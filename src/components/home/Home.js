@@ -10,6 +10,7 @@ export const Home = () => {
             <div className="homePage">
                 <div className="homePageImage">
                     <img
+                        
                         src={mark}
                         alt="Image of Mark" />
 
