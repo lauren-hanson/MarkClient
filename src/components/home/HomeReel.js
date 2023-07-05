@@ -31,7 +31,7 @@ export const HomeReel = () => {
     }, [index])
 
     return (
-        <div className="slideshow">
+        <div className="slideshowContainer">
             <div
                 className="slideshowSlider"
                 style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
