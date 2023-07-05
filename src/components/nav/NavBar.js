@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 import Burger from './Burger';
 import "./NavBar.css"
 
@@ -24,7 +25,7 @@ export const NavBar = () => {
     <div className="styledNav">
       <Nav>
         <div className="logo">
-          contact
+          <Link to="/contact">contact</Link>
         </div>
         <a className="navbar-item" href="/">
           <h1 className="navBarHeadings">Mark Thomas</h1>
