@@ -44,6 +44,11 @@ export const ContactForm = () => {
         <>
             {/* <h2>Contact Form</h2> */}
             <form className="contactForm" action="lohanson33@gmail.com" method="post" enctype="text/plain" onSubmit={handleSubmit}>
+            <div className="contactParagraph">
+                <p >
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                </p>
+            </div>
                 <div>
                     <fieldset className="formItem">
                         <label htmlFor="name">Name: </label>

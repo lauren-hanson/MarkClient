@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getMedias } from "../../managers/MediaManager.js"
+// import { getMedias } from "../../managers/MediaManager.js"
 import "./Work.css"
 
 export const Work = () => {
@@ -47,7 +47,7 @@ export const Work = () => {
                 return <div>{m.type}</div>
             })}
         </div> */}
-        <nav className="navigation">
+        {/* <nav className="navigation">
             <ul>
                 <li>
                     <a href="#film">Film & TV</a>
@@ -59,7 +59,7 @@ export const Work = () => {
                     <a href="#art">Art Direction</a>
                 </li>
             </ul>
-        </nav>
+        </nav> */}
         <div className="film" id="film">
             <img src='https://images.unsplash.com/photo-1501446529957-6226bd447c46?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1489&q=80' />
         </div>
