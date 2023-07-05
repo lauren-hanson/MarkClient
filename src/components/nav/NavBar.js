@@ -14,6 +14,8 @@ display: flex;
 justify-content: space-between;
 background-color: #fafafa;
 color: #2e252c;
+border-bottom: 1px solid #2e252c; 
+
 
 `;
 
